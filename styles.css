@@ -1,0 +1,139 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+ 
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+ 
+  section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+ 
+  /* Seção Sobre Mim */
+  #about {
+    text-align: center;
+  }
+ 
+  #about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+ 
+  #about p {
+    color: #555;
+  }
+ 
+  /* Seção Portfólio */
+  #portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+ 
+  .project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+ 
+  .project img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+ 
+  .project h3 {
+    margin: 10px 0;
+  }
+ 
+  .project p {
+    color: #666;
+  }
+ 
+  /* Seção Habilidades */
+  #skills {
+    text-align: center;
+  }
+ 
+  .skill {
+    margin: 20px 0;
+  }
+ 
+  .progress-bar {
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    width: 80%;
+    margin: 10px auto;
+  }
+ 
+  .progress {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+  }
+ 
+  /* Seção Contato */
+  #contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+ 
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  #contact label {
+    margin: 5px 0;
+  }
+ 
+  #contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+ 
+  #contact button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+ 
+  #contact button:hover {
+    background-color: #45a049;
+  }
+ 
+  /* Google Maps */
+  #map {
+    height: 300px;
+    margin-top: 20px;
+  }
+ 
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #portfolio {
+      grid-template-columns: 1fr;
+    }
+  }
+

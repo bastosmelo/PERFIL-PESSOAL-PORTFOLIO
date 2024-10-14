@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Meu Perfil Pessoal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body style="background-color: lightgray;">
+    <div style="background-color: lightgray;">
+    <header style="text-align: right;">
+        <menu id="itens">
+            <ul>
+                <a href="#Sobre mim">Sobre mim</a> | 
+                <a href="#Portfolio">Portfólio</a> | 
+                <a href="#Skills">Habilidades</a> | 
+                    <a href="#contato">Contato</a>
+            </ul>
+        </menu>
+    </header>
+    </div>
+    <!-- Seção Sobre Mim -->
+    <div>
+    <section id="about">
+        <table style="text-align: justify;" collor="lightgray" cellpadding="1" cellspacing="1">
+            <th rowspan="6" color="lightgray"><img id="Foto" src="Imagens/Bruno - Foto 3.png" alt="Foto Bruno"></th>
+            </tr>
+            <tr color="lightgray">
+                <P><h1>Bruno Bastos Melo</h1></P>
+                <P><td><h3>Olá! Eu sou um desenvolvedor júnior apaixonado por tecnologia e desenvolvimento de software. Tenho interesse em criar soluções que facilitem a vida das pessoas e busco sempre aprender novas tecnologias para melhorar minhas habilidades.</h3></td></P>
+            </tr>
+        </table>
+    </section>
+    </div>
+    <!-- Seção Portfólio -->
+    <section id="portfolio">
+    <p style="text-align: center;"><h2>Portfólio</h2></p>
+    <div class="project">
+      <h3>Projeto 1</h3>
+      <p>Desenvolvimento de um site responsivo utilizando HTML, CSS e JavaScript.</p>
+      <a href="https://rusthenronald.github.io/Projeto-Front-end/" target="_blank">
+        <img src="Imagens/Site - Sport Finder - Foto 01.jpeg" alt="Imagem do Projeto 1">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 2</h3>
+      <p>Criação de um sistema de cadastro de usuários utilizando PHP e MySQL.</p>
+      <a href="link-do-projeto2" target="_blank">
+        <img src="imagem-projeto2.jpg" alt="Imagem do Projeto 2">
+      </a>
+    </div>
+    <div class="project">
+      <h3>Projeto 3</h3>
+      <p>Desenvolvimento de um aplicativo mobile utilizando React Native.</p>
+      <a href="link-do-projeto3" target="_blank">
+        <img src="imagem-projeto3.jpg" alt="Imagem do Projeto 3">
+      </a>
+    </div>
+    </section>
+    <!-- Seção Habilidades -->
+    <section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skill">
+      <h4>HTML</h4>
+      <div class="progress-bar">
+        <div class="progress" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h4>CSS</h4>
+      <div class="progress-bar">
+        <div class="progress" style="width: 55%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <h4>JavaScript</h4>
+      <div class="progress-bar">
+        <div class="progress" style="width: 25%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+        <h4>Python</h4>
+        <div class="progress-bar">
+          <div class="progress" style="width: 45%;"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Seção Contato -->
+    <section id="contact">
+    <h2>Contato</h2>
+    <form id="contact-form">
+      <label for="name">Nome</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="map" style="text-align: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1067.4705498587052!2d-37.060715175937794!3d-10.967876713493999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab12ff7ad1497%3A0x1c4037b00d89e8d6!2sTiradentes%20Innovation%20Center!5e1!3m2!1spt-BR!2sbr!4v1728843831577!5m2!1spt-BR!2sbr" width="1190" height="310" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
+    <div style="background-color: darkgrey;">
+    <footer id="contato">
+    <p style="text-align: center;">
+        <a href="https://github.com/bastosmelo">Bruno Bastos Melo © 2024. Todos os direitos reservados.</a>
+        <table align="center">
+            <tr>
+            <td><img width="30" height="30" src='Imagens/E-mail - foto 02.png'/></td>
+            <td><i> bruno.bastos@souunit.com.br</i></td> 
+            </tr>
+        </table>
+    </p>
+    </footer>
+    </div>
+</body>
+</html>
