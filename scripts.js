@@ -1,3 +1,5 @@
+
+
 // Função para validar o formulário de contato
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     const name = document.getElementById("name").value;
