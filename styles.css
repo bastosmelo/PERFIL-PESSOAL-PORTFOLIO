@@ -72,8 +72,9 @@ body {
     text-align: center;
   }
  
-  .skill {
+  .skills {
     margin: 20px 0;
+    color: #45a049;
   }
  
   .progress-bar {
