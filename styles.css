@@ -22,7 +22,7 @@ header {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -63,38 +63,27 @@ header {
 }
 
   /* Seção Portfólio */
-  #portfolio {
+#portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
   }
 
-
-  .project:hover{
-    transform: scale(1.05);
-  }
- 
   .project {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
- 
+
+  .project:hover{
+    transform: scale(1.05);
+  }
+  
   .project img {
     max-width: 100%;
     border-radius: 8px;
   }
- 
-  .project h3 {
-    margin: 10px 0;
-  }
- 
-  .project p {
-    color: #666;
-  }
-
 
 /* Seção Habilidades */
 .skills-section {
@@ -136,8 +125,7 @@ header {
   max-width: 600px;
   margin: 0 auto;
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 40px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
