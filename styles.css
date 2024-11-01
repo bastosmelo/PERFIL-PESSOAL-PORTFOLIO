@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #d4d4d4;
+  background-color: lightgray;
 }
 
 h2 {
@@ -15,7 +15,6 @@ h2 {
 header {
   background-color: #343a40;
   padding: 1rem 0;
-  color: white;
 }
 
 .container {
@@ -47,7 +46,6 @@ header {
 .about-section {
   text-align: center;
   padding: 50px 0;
-  background-color: #fff;
 }
 
 .about-section img {
@@ -70,7 +68,7 @@ header {
   }
 
   .project {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -88,7 +86,6 @@ header {
 /* Seção Habilidades */
 .skills-section {
   padding: 50px 0;
-  background-color: #fff;
 }
 
 .skills-grid {
@@ -102,10 +99,10 @@ header {
 }
 
 .progress-bar {
-  background-color: #e0e0e0;
+  background-color: white;
   border-radius: 8px;
   height: 20px;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
 }
 
@@ -118,7 +115,6 @@ header {
 /* Seção Contato */
 .contact-section {
   padding: 50px 0;
-  background-color: #f9f9f9;
 }
 
 .contact-form {
