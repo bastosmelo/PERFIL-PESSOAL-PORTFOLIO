@@ -95,6 +95,7 @@ header {
   border-radius: 10px;
   height: 20px;
   width: 60%;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -110,6 +111,7 @@ header {
   background-color: white;
   padding: 40px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 .form-group {
