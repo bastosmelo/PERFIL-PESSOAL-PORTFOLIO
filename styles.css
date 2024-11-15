@@ -22,22 +22,29 @@ h2 {
   }
 }
 
-/* Header */
+/* Estilos para o Header */
 header {
   background-color: #343a40;
+  
   padding: 15px;
+  position: relative;
 }
 
 .container {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Alinha tudo à esquerda */
+  align-items: center;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  margin-left: 15px; /* Espaçamento entre o menu e o botão */
 }
 
 .nav a {
   color: white;
-  margin-left: 15px;
+  margin-right: 15px;
   text-decoration: none;
 }
 
@@ -45,15 +52,47 @@ header {
   text-decoration: underline;
 }
 
-/* Responsividade do Header */
+/* Esconde o menu toggle inicialmente */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: relative; /* Mantém o ícone dentro do header */
+}
+
+/* Responsividade: Para telas menores */
 @media (max-width: 768px) {
-  .container {
+  .nav {
+    display: none; /* Esconde a navegação no mobile */
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    background-color: #343a40;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav.active {
+    display: flex; /* Mostra o menu quando o botão for clicado */
   }
 
   .nav a {
-    margin: 10px 0;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid white;
+  }
+
+  /* Exibe o botão do menu hambúrguer */
+  .menu-toggle {
+    display: block;
+    font-size: 30px;
+    position: relative;
+    top: 0;
+    left: 0; /* Alinha o ícone à esquerda */
   }
 }
 
@@ -95,8 +134,9 @@ header {
 /* Seção Portfólio */
 #portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático da grade */
   gap: 20px;
+  padding: 20px;
 }
 
 .project {
@@ -104,26 +144,24 @@ header {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adiciona uma sombra leve */
+  transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
 }
 
 .project img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Imagem ajusta-se ao container */
+  height: auto; /* Mantém a proporção da imagem */
   border-radius: 10px;
 }
 
-/* Responsividade da Seção Portfólio */
+/* Responsividade extra para telas pequenas */
 @media (max-width: 768px) {
   #portfolio {
-    grid-template-columns: 1fr;
-  }
-
-  .project img {
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para colunas menores em telas menores */
   }
 }
 
@@ -216,11 +254,11 @@ header {
 
 /* Footer */
 footer {
+  width: 100%;
   text-align: center;
   padding: 10px;
   background-color: #343a40;
   color: lightgray;
-  width: 100%;
   position: relative;
   bottom: 0;
 }

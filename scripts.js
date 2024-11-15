@@ -31,3 +31,8 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
     event.preventDefault();
   }
 });
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav').classList.toggle('active');
+});
+
