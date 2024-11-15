@@ -1,9 +1,15 @@
 /* Estilos Globais */
-body {
+html, body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: lightgray;
+  overflow-x: hidden;
+}
+
+/* Garantir que elementos se ajustem à largura da viewport */
+* {
+  box-sizing: border-box;
 }
 
 h2 {
@@ -25,7 +31,7 @@ h2 {
 /* Estilos para o Header */
 header {
   background-color: #343a40;
-  
+  width: 100%;
   padding: 15px;
   position: relative;
 }
