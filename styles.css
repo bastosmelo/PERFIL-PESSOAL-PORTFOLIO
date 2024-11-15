@@ -102,6 +102,26 @@ header {
   }
 }
 
+/* Estilo do botão "Topo" */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  display: none; /* Oculto por padrão */
+  transition: opacity 0.3s ease-in-out;
+}
+
+#back-to-top:hover {
+  background-color: #555;
+}
+
 /* Seção Sobre */
 .about-section {
   text-align: center;
