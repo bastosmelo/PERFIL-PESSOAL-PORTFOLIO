@@ -11,6 +11,17 @@ h2 {
   color: #343a40;
 }
 
+/* Responsividade Global */
+@media (max-width: 768px) {
+  body {
+    padding: 0 15px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
 /* Header */
 header {
   background-color: #343a40;
@@ -34,6 +45,18 @@ header {
   text-decoration: underline;
 }
 
+/* Responsividade do Header */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+}
+
 /* Seção Sobre */
 .about-section {
   text-align: center;
@@ -52,29 +75,57 @@ header {
   color: #333;
 }
 
-  /* Seção Portfólio */
-#portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
-  }
-
-  .project {
-    background-color: white;
+/* Responsividade da Seção Sobre */
+@media (max-width: 768px) {
+  .about-section {
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
   }
 
-  .project:hover{
-    transform: scale(1.05);
+  .about-section img {
+    width: 120px;
+    height: 120px;
   }
-  
+
+  .about-section p {
+    font-size: 1em;
+    padding: 0 15px;
+  }
+}
+
+/* Seção Portfólio */
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsividade da Seção Portfólio */
+@media (max-width: 768px) {
+  #portfolio {
+    grid-template-columns: 1fr;
+  }
+
   .project img {
     width: 100%;
-    height: 50%;
-    border-radius: 10px;
   }
+}
 
 /* Seção Habilidades */
 .skills-section {
@@ -105,13 +156,24 @@ header {
   height: 100%;
 }
 
+/* Responsividade da Seção Habilidades */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-bar {
+    width: 80%;
+  }
+}
+
 /* Seção Contato */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
   background-color: white;
   padding: 40px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
@@ -125,7 +187,8 @@ header {
   color: #333;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
   width: 100%;
   padding: 10px;
   border: 2px solid #ccc;
@@ -136,6 +199,13 @@ header {
   color: red;
   font-size: 0.85rem;
   margin-top: 10px;
+}
+
+/* Responsividade da Seção Contato */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 20px;
+  }
 }
 
 /* Map */
@@ -168,4 +238,16 @@ footer {
   border: 1px solid #333;
   margin: 0 5px;
   cursor: pointer;
+}
+
+/* Responsividade para Footer e Ícones Sociais */
+@media (max-width: 768px) {
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
 }

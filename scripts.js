@@ -1,16 +1,33 @@
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let hasError = false;
 
-    if (name === "" || email === "" || message === "") {
-      alert("Por favor, preencha todos os campos.");
-      event.preventDefault();
-    } else if (!emailPattern.test(email)) {
-      alert("Por favor, insira um e-mail válido.");
-      event.preventDefault();
-    }
-  });
-  
+  if (name === "") {
+    document.querySelector("#name + .error-message").style.display = "block";
+    hasError = true;
+  } else {
+    document.querySelector("#name + .error-message").style.display = "none";
+  }
+
+  if (!emailPattern.test(email)) {
+    document.querySelector("#email + .error-message").style.display = "block";
+    hasError = true;
+  } else {
+    document.querySelector("#email + .error-message").style.display = "none";
+  }
+
+  if (message === "") {
+    document.querySelector("#message + .error-message").style.display = "block";
+    hasError = true;
+  } else {
+    document.querySelector("#message + .error-message").style.display = "none";
+  }
+
+  if (hasError) {
+    event.preventDefault();
+  }
+});
