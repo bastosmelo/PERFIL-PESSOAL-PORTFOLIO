@@ -18,3 +18,12 @@ backToTop.addEventListener("click", (event) => {
     behavior: "smooth", // Rola suavemente para o topo
   });
 });
+
+// Seleciona o botão "menu-toggle" e o menu de navegação
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+// Adiciona um evento de clique ao botão
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('active'); // Alterna a classe 'active' no menu
+});
