@@ -236,13 +236,14 @@ header {
   max-width: 600px;
   margin: 0 auto;
   background-color: white;
-  padding: 40px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .form-group label {
@@ -253,9 +254,17 @@ header {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 100%; /* Faz os campos ocuparem toda a largura disponível */
+  max-width: 800px; /* Define um tamanho máximo */
   padding: 10px;
   border: 2px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.form-group textarea {
+  resize: none; /* Impede o redimensionamento */
+  height: 50px; /* Ajuste a altura para ficar proporcional */
 }
 
 .error-message {
@@ -263,6 +272,23 @@ header {
   color: red;
   font-size: 0.85rem;
   margin-top: 10px;
+}
+
+.contact-form button[type="submit"] {
+  display: block; /* Faz o botão ocupar a largura total disponível */
+  margin: 20px auto; /* Centraliza o botão horizontalmente */
+  padding: 10px 20px; /* Ajusta o tamanho do botão */
+  background-color: #343a40; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove bordas */
+  border-radius: 10px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: lightgray; /* Cor ao passar o mouse */
+  color: #343a40; /* Texto mais visível */
 }
 
 /* Responsividade da Seção Contato */
@@ -274,8 +300,15 @@ header {
 
 /* Map */
 .map-container {
-  margin-top: 20px;
-  text-align: center;
+  display: flex; /* Define um layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente, se necessário */
+  margin-top: 40px;
+}
+
+.map-container iframe {
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 /* Footer */
