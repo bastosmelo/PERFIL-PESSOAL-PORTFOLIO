@@ -12,7 +12,9 @@ html, body {
   box-sizing: border-box;
 }
 
-h2 {
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: xx-large;
   text-align: center;
   color: #343a40;
 }
